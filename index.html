@@ -7,37 +7,329 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Кекстаграм</title>
+  <title>Интернет-магазин "DRIVE MOTO"</title>
 </head>
 
 <body>
+  <h1 class="visually-hidden">Интернет-магазин "DRIVE MOTO"</h1>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header__logo-wrapper">
+        <a class="header__logo logo">
+          <img class="logo__icon logo__icon--mobile" width="82" height="25" alt="Логотип «Драйв Мото»." src="images/logo-mobile.svg">
+        </a>
+      </div>
+      <nav class="header__menu menu">
+        <div class="menu__popover menu__popover--closed menu__popover--nojs">
+          <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="menu__content-list">
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Войти</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Регистрация</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Избранное</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Корзина</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Магазины</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Акции</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Доставка и оплата</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Квадроциклы</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Катера</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop menu__content-link--current">Гидроциклы</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Лодки</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Вездеходы</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Снегоходы</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Двигатели</a>
+            </li>
+            <li class="menu__content-item">
+              <a class="menu__content-link menu__content-link--desktop" href="#">Запчасти</a>
+            </li>
+          </ul>
+          <address class="menu__address">Москва, ул. Науки  25</address>
+        </div>
+      </nav>
+  </header>
   <main>
+    <!--Промо блок-->
+    <article class="promo">
+      <ul class="promo__content-list">
+        <li class="promo__content-item">
+          <a class="promo__content-link" href="#">
+            <img class="promo__content-img" width="320" height="164" alt="Почувствуй скорость и экстрим." src="images/banner.png">
+          </a>
+        </li>
+        <li class="promo__content-item">
+          <a class="promo__content-link" href="#"></a>
+        </li>
+        <li class="promo__content-item">
+          <a class="promo__content-link" href="#"></a>
+        </li>
+        <li class="promo__content-item">
+          <a class="promo__content-link" href="#"></a>
+        </li>
+        <li class="promo__content-item">
+          <a class="promo__content-link" href="#"></a>
+        </li>
+        <li class="promo__content-item">
+          <a class="promo__content-link" href="#"></a>
+        </li>
+      </ul>
+    </article>
+    <!--Акции-->
+    <section class="stock">
+      <h2 class="visually-hidden">Акция</h2>
+      <a class="stock__card" href="#">
+        <div class="stock__card-wrapper">
+          <h3 class="stock__card-title">Лодочный мотор Suzuki DF9.9BRS</h3>
+          <img class="stock__card-img" width="125" height="177" alt="Фото лодочного мотора." src="images/stock_img.png">
+          <p class="stock__card-price--old">225 000 ₽</p>
+          <p class="stock__card-price--new">190 000 ₽</p>
+          <p class="stock__card-label">акция</p>
+          <p class="stock__card-text">Акция действует до <span class="stock__card-text--date">31.08.2020</span></p>
+        </div>
+      </a>
+    </section>
+    <section class="search">
+      <form class="search__form" action="#">
+        <fieldset class="search__by-number">
+          <legend class="visually-hidden">Поиск по номеру</legend>
+          <label class="search__by-number--label" for="number">Поиск по номеру</label>
+          <input class="search__by-number--field" type="text" name="number" id="number" placeholder="Введите номер">
+        </fieldset>
+        <fieldset class="search__by-brand">
+          <legend class="visually-hidden">Поиск по марке</legend>
+          <label class="search__by-brand--label" for="brand">Поиск по марке</label>
+          <input class="search__by-brand--field" type="text" name="brand" id="brand" placeholder="Введите марку">
+        </fieldset>
+        <fieldset class="search__by-product">
+          <legend class="visually-hidden">Поиск по названию товара</legend>
+          <label class="search__by-product--label" for="product">Поиск по названию товара</label>
+          <input class="search__by-product--field" type="text" name="product" id="product" placeholder="Введите название товара">
+        </fieldset>
+      </form>
+    </section>
+    <!--Разделы магазина-->
+    <section class="section__quad-bikes">
+      <h2 class="section__title">Квадроциклы</h2>
+      <img class="section__img" width="90" height="69" alt="Изображение квадроцикла." src="images/quad-bike__CFMOTO-X6-EPS_blue 1.png">
+      <a class="section__link" href="#">Подробее</a>
+    </section>
+
+    <section class="section__jet-skis">
+      <h2 class="section__title">Гидроциклы</h2>
+      <img class="section__img" width="121" height="65" alt="Изображение гидроцикла." src="images/jet_ski_PNG90 1.png">
+      <a class="section__link" href="#">Подробее</a>
+    </section>
+
+    <section class="section__boats">
+      <h2 class="section__title">Катера</h2>
+      <img class="section__img" width="154" height="76" alt="Изображение катера." src="images/boat_PNG36 2.png">
+      <a class="section__link" href="#">Подробее</a>
+    </section>
+
+    <section class="section__snowmobiles">
+      <h2 class="section__title">Снегоходы</h2>
+      <img class="section__img" width="121" height="77" alt="Изображение снегохода." src="images/snowmobile_rmvector551 2.png">
+      <a class="section__link" href="#">Подробее</a>
+    </section>
+
+    <section class="section__all-terrain">
+      <h2 class="section__title">Вездеходы</h2>
+      <img class="section__img" width="117" height="75" alt="Изображение вездехода." src="images/all-terrain_Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front4072 1.png">
+      <a class="section__link" href="#">Подробее</a>
+    </section>
+
+    <section class="section__engines">
+      <h2 class="section__title">Двигатели</h2>
+      <img class="section__img" width="60" height="103" alt="Изображение двигателя." src="images/engine_1.png">
+      <a class="section__link" href="#">Подробее</a>
+    </section>
+    <!--Популярные товары-->
+    <section class="popular-products">
+      <h2 class="popular-products__title">Популярные товары</h2>
+      <div class="popular-products__wrapper">
+        <a class="spare-parts__link popular-products__link"#">Запчасти</a>
+        <a class="motors__link popular-products__link" href="#">Моторы</a>
+        <a class="tires__link popular-products__link" href="#">Шины</a>
+        <a class="electronics__link popular-products__link" href="#">Электроника</a>
+        <a class="tools__link popular-products__link" href="#">Инструменты</a>
+        <a class="accessuories__link popular-products__link" href="#">Аксессуары</a>
+      </div>
+      <div class="popular-product__default-product default-product">
+        <h3 class="default-product__title">Водонепроницаемый рюкзак</h3>
+        <img class="default-product__img" width="200" height="200" alt="Фото рюкзака." src="images/backpack.png">
+        <p class="default-product__price">9 800 ₽</p>
+        <div class="default-product__button-wrapper">
+          <button class="default-product__button button" type="button">Заказать</button>
+        </div>
+      </div>
+      <div class="popular-products__similar hidden">
+        <div class="popular-products__similar-list">
+          <!--Список похожих товаров-->
+        </div>
+      </div>
+      <button class="popular-products__button" type="button">Показать еще</button>
+    </section>
+    <section class="banner">
+      <h2 class="visually-hidden">Скидки на все запчасти</h2>
+      <a class="banner__link">
+        <img class="banner__img" width="300" height="90" alt="Изображение квадроциклов с надписью о скидках." src="images/bunner_2.png">
+      </a>
+    </section>
+    <!--Сопутствующие товары-->
+    <section class="related-products">
+      <h2 class="related-products__title">С этим товаром покупают</h2>
+      <div class="related-products__wrapper">
+        <a class="spare-parts__link related-products__link"#">Запчасти</a>
+        <a class="motors__link related-products__link" href="#">Моторы</a>
+        <a class="tires__link related-products__link" href="#">Шины</a>
+        <a class="electronics__link related-products__link" href="#">Электроника</a>
+        <a class="tools__link related-products__link" href="#">Инструменты</a>
+        <a class="accessuories__link related-products__link" href="#">Аксессуары</a>
+      </div>
+      <div class="related-products__default-product default-product">
+        <h3 class="default-product__title">BRP Audio-портативная система</h3>
+        <img class="default-product__img" width="200" height="133" alt="Фото аудиосистемы." src="images/brp_audio_portativnaya_sistema-295100797 1.png">
+        <p class="default-product__price">нет в наличии</p>
+        <div class="default-product__button-wrapper">
+          <button class="default-product__button button" type="button">Сообщить о поступлении</button>
+        </div>
+      </div>
+      <div class="popular-products__similar hidden">
+        <div class="popular-products__similar-list">
+          <!--Список сопутсвующих товаров-->
+        </div>
+      </div>
+      <button class="popular-products__button" type="button">Показать еще</button>
+    </section>
   </main>
 
   <footer class="page-footer  container">
+    <!--Форма подписки-->
+    <section class="mailing-list">
+      <form class="mailing-list__form" action="post">
+        <fieldset class="mailing-list__email">
+          <legend class="mailing-list__title">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</legend>
+          <label class="mailing-list__label">
+            <input class="mailing-list__field" type="email" name="email" id="email" placeholder="Введите ваш e-mail:">
+          </label>
+          <button class="mailing-list__button" type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </section>
+    <!--Информация-->
+    <section class="info">
+      <h2 class="info__title">Информация</h2>
+      <ul class="info__list">
+        <li class="info__item">
+          <a class="info__link">О компании</a>
+        </li>
+        <li class="info__item">
+          <a class="info__link">Контакты</a>
+        </li>
+        <li class="info__item">
+          <a class="info__link">Акции</a>
+        </li>
+        <li class="info__item">
+          <a class="info__link">Магазины</a>
+        </li>
+      </ul>
+    </section>
+    <!-- -->
+    <section class="about">
+      <h2 class="about__title">Доставка и самовывоз</h2>
+      <ul class="about__list">
+        <li class="about__item">
+          <a class="about__link">Оплата</a>
+        </li>
+        <li class="about__item">
+          <a class="about__link">Возврат-обмен</a>
+        </li>
+        <li class="about__item">
+          <a class="about__link">Новости</a>
+        </li>
+        <li class="about__item">
+          <a class="about__link">Магазины</a>
+        </li>
+      </ul>
+    </section>
+    <div class="footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link link socials__link--vk" href="#">
+            <svg class="link__svg" width="30" height="30">
+              <use href="images/sprite.svg#icon_vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link link socials__link--instagram" href="#">
+            <svg class="link__svg" width="30" height="30">
+              <use href="images/sprite.svg#icon_instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link link socials__link--yotube" href="#">
+            <svg class="link__svg" width="30" height="30">
+              <use href="images/sprite.svg#icon_youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="data">
+      <a class="data__offer">Договор оферты</a>
+      <a class="data__person">Политика обработки персональных данных</a>
+    </div>
   </footer>
 
-  <!-- Сообщение с ошибкой загрузки изображения -->
+  <!-- Сообщение с ошибкой заказа товара-->
   <template id="error">
     <section class="error">
       <div class="error__inner">
-        <h2 class="error__title">Ошибка загрузки файла</h2>
+        <h2 class="error__title">Ошибка загрузки</h2>
         <button type="button" class="error__button">Попробовать ещё раз</button>
       </div>
     </section>
   </template>
 
-  <!-- Сообщение об успешной загрузке изображения -->
+  <!-- Сообщение об успешном заказе товара-->
   <template id="success">
     <section class="success">
       <div class="success__inner">
-        <h2 class="success__title">Изображение успешно загружено</h2>
+        <h2 class="success__title">Ваш заказ оформлен!</h2>
         <button type="button" class="success__button">Круто!</button>
       </div>
     </section>
   </template>
-  <script src="vendor/nouislider/nouislider.js"></script>
-  <script src="vendor/pristine/pristine.min.js"></script>
+  
   <script defer src="/js/main.js" type="module"></script>
 </body>
 </html>
